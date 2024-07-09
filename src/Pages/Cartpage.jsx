@@ -1,9 +1,9 @@
 import React from 'react'
 import './Cartpage.css'
 import REC5 from '../assets/Group 13 E45.png'
-import REC6 from '../assets/Group 13 E45.png'
-import REC7 from '../assets/Group 13 E45.png'
-import { Link } from 'react-router-dom'
+import REC6 from '../assets/Group 8 GLOW ESSENTIALS.png'
+import REC7 from '../assets/Group 5 M & H.png'
+
 
 const Cart = () => {
   return (
