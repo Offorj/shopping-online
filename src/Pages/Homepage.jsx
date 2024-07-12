@@ -22,7 +22,8 @@ const Homepage = () => {
   return (
     
 <div className='man1'>
-<Navbar />
+  <Navbar />
+ {/* Hero */}
 <div className='Hero'>
       <div className='hero-bg1'>
         <h1 className='buyrite'>BUYRITE</h1>

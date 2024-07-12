@@ -4,20 +4,21 @@ import MASTA from '../assets/Master card.png'
 import VISA from '../assets/visa.png'
 import QR from '../assets/scan.png'
 import SCAN from '../assets/Scan to pay.png'
+import { Link } from 'react-router-dom'
 
 const Payment = () => {
   return (
     <div className='payment'>
 
-          <div className="nav">
-            <div className='nav-mini'>
-            <a href="/"><button className='button'>Shopping bag </button></a>
-       <a href="Delivery"><button className='button'>Delivery</button></a>     
-          <a href="Payment"><button className='button'>Payment</button></a>  
-          <a href="Cartpage"></a>  <button className='button'>Check-out</button>
-            </div>
+<div className="nav">
            
-        </div>
+           <Link to="/"><button className='button'>Shopping bag </button></Link>
+    <Link to="/Delivery"><button className='button'>Delivery</button> </Link>
+      <Link to="/Payment"><button className='button'>Payment</button></Link>
+      <button className='button'>Check-out</button>
+      
+       
+    </div>
         
         <div className='pay'>
            <div className='wait'>
@@ -53,7 +54,7 @@ const Payment = () => {
     <h3>$53,660.00</h3>
 </div>
 <div className='Checked'>
-   <a href="Confirm"><span>FINALISE ORDER</span></a> 
+   <Link to="/Confirm"><span>FINALISE ORDER</span></Link>
 </div>
         </div>
         <footer>

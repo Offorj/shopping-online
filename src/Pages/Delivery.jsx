@@ -1,20 +1,21 @@
 import React from 'react'
 import './Delivery.css'
+import { Link } from 'react-router-dom'
 
 
 
 const Delivery = () => {
   return (
     <div className='delivery'>
-       <div className="nav">
-            <div className='nav-mini'>
-            <a href="/"><button className='button'>Shopping bag </button></a>
-       <a href="Delivery"><button className='button'>Delivery</button></a>     
-          <a href="Payment"><button className='button'>Payment</button></a>  
-          <a href="Cartpage"></a>  <button className='button'>Check-out</button>
-            </div>
+      <div className="nav">
            
-        </div>
+           <Link to="/"><button className='button'>Shopping bag </button></Link>
+    <Link to="/Delivery"><button className='button'>Delivery</button> </Link>
+      <Link to="/Payment"><button className='button'>Payment</button></Link>
+      <button className='button'>Check-out</button>
+      
+       
+    </div>
         <div className='mini'>
             <div className='mini1'>
             <h2>
@@ -60,7 +61,7 @@ const Delivery = () => {
     <h3>$53,660.00</h3>
 </div>
 <div className='Checked'>
-   <a href="Payment"><span>CONTINUE</span></a> 
+<Link to="/Payment"><span>Continue</span></Link> 
 </div>
         </div>
 

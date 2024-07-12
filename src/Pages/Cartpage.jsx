@@ -3,6 +3,7 @@ import './Cartpage.css'
 import REC5 from '../assets/Group 13 E45.png'
 import REC6 from '../assets/Group 8 GLOW ESSENTIALS.png'
 import REC7 from '../assets/Group 5 M & H.png'
+import { Link } from 'react-router-dom'
 
 
 const Cart = () => {
@@ -10,12 +11,12 @@ const Cart = () => {
     <>
        <div className='main-cart'>
         <div className="nav">
-            <div className='nav-mini'>
-             <a href="/"><button className='button'>Shopping bag </button></a>
-       <a href="Delivery"><button className='button'>Delivery</button></a>     
-          <a href="Payment"><button className='button'>Payment</button></a>  
-          <a href="Cartpage"></a>  <button className='button'>Check-out</button>
-            </div>
+           
+               <Link to="/"><button className='button'>Shopping bag </button></Link>
+        <Link to="/Delivery"><button className='button'>Delivery</button> </Link>
+          <Link to="/Payment"><button className='button'>Payment</button></Link>
+          <button className='button'>Check-out</button>
+          
            
         </div>
 
@@ -49,7 +50,7 @@ const Cart = () => {
        </div>
       
         
-     <a href="/"><h1 className='h1'>CLEAR CART</h1></a>
+     <h1 className='h1'>CLEAR CART</h1>
           
         </div>
         <div className='check-in'>
@@ -58,7 +59,7 @@ const Cart = () => {
     <h3>$53,660.00</h3>
 </div>
 <div className='Checked'>
-  <a href="Delivery"><span>CHECK OUT</span></a> 
+ <Link to="/Delivery"><span>CHECK OUT</span></Link> 
 </div>
         </div>
         <footer>
